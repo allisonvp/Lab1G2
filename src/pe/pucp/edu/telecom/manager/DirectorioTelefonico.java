@@ -1,5 +1,6 @@
 package pe.pucp.edu.telecom.manager;
 
+import pe.pucp.edu.telecom.entity.base.Docente;
 import pe.pucp.edu.telecom.entity.base.Usuario;
 
 import java.util.ArrayList;
@@ -16,15 +17,6 @@ public class DirectorioTelefonico {
         Usuario usuario = Usuario.datosUsuario();
         listaUsuarios.add(usuario);
 
-        System.out.print("¿Es docente o personal administrativo?: ");
-        String rpta = sc.nextLine();
-        if (rpta.equalsIgnoreCase("docente")) {
-
-        } else if (rpta.equalsIgnoreCase("docente")) {
-
-        } else {
-
-        }
     }
 
     public ArrayList<Usuario> getListaUsuarios() {
@@ -34,4 +26,6 @@ public class DirectorioTelefonico {
     public void setListaUsuarios(ArrayList<Usuario> listaUsuarios) {
         this.listaUsuarios = listaUsuarios;
     }
+
+
 }
