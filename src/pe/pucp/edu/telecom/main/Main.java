@@ -27,7 +27,7 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
-
+                        dt.listarUsuarios();
                         break;
 
                     case 2:

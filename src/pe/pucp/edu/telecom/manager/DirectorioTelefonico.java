@@ -16,8 +16,15 @@ public class DirectorioTelefonico {
     public void agregar() {
         Usuario usuario = Usuario.datosUsuario();
         listaUsuarios.add(usuario);
-
     }
+
+    public void listarUsuarios(){
+        System.out.println(usuario.getDocente() + "," +
+                usuario.getCodigo() + "," + usuario.getNombre() + "," +
+                usuario.getApellido() + "," + usuario.getTelefono() + "," +
+                usuario.getAnexo() + "," + usuario.getDepartamento());
+    }
+
 
     public ArrayList<Usuario> getListaUsuarios() {
         return listaUsuarios;
