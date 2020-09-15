@@ -1,5 +1,7 @@
 package pe.pucp.edu.telecom;
 
+import pe.pucp.edu.telecom.manager.DirectorioTelefonico;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,11 +9,12 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner sc = new Scanner(System.in);
+        DirectorioTelefonico dt = new DirectorioTelefonico();
 
         principal:
         while(true) {
             try {
-                System.out.println("\n1. Leer Datoss");
+                System.out.println("\n1. Leer Datos");
                 System.out.println("2. Agregar Usuario");
                 System.out.println("3. Buscar Usuario");
                 System.out.println("4. Escribir Directorio");
@@ -21,9 +24,11 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
+
                         break;
 
                     case 2:
+                        dt.agregar();
                         break;
 
                     case 3:
@@ -41,7 +46,7 @@ public class Main {
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("¡Debe ingresar un número!");
+                System.out.println("Opción errónea");
             }
         }
     }

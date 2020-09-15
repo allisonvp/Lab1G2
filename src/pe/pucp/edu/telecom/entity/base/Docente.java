@@ -4,6 +4,8 @@ public class Docente extends Usuario {
     public int añoInicioAct;
     public int cantCursos;
 
+
+
     public int getAñoInicioAct() {
         return añoInicioAct;
     }
