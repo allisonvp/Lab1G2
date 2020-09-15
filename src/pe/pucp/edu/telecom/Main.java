@@ -11,7 +11,7 @@ public class Main {
         principal:
         while(true) {
             try {
-                System.out.println("\n1. Leer Datos");
+                System.out.println("\n1. Leer Datoss");
                 System.out.println("2. Agregar Usuario");
                 System.out.println("3. Buscar Usuario");
                 System.out.println("4. Escribir Directorio");
