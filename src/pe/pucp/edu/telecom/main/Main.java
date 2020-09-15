@@ -12,7 +12,7 @@ public class Main {
 	// write your code here
         Scanner sc = new Scanner(System.in);
         DirectorioTelefonico dt = new DirectorioTelefonico();
-        CSV csv =  new CSV();
+        //CSV csv =  new CSV();
         ArrayList<Usuario> listaEncontrados = new ArrayList<>();
         principal:
         while(true) {

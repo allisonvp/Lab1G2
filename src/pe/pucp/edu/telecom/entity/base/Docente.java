@@ -28,14 +28,16 @@ public class Docente extends Usuario {
             System.out.print("¿Es Instructor, Jefe de Práctica o Profesor?: ");
             String rpta = sc.nextLine();
             if (rpta.equalsIgnoreCase("Instructor")) {
-
+                Instructor instructor = Instructor.datosInstructor();
+                docente.setInstructor(instructor);
                 break;
             } else if (rpta.equalsIgnoreCase("Jefe de práctica")) {
                 JP jp = JP.datosJP();
-                jp.setJp(jp);
+                docente.setJp(jp);
                 break;
             } else if (rpta.equalsIgnoreCase("profesor")) {
-
+                Profesor profesor = Profesor.datosProfesor();
+                docente.setProfesor(profesor);
                 break;
             } else {
                 System.out.println("Ingrese una opción válida");
